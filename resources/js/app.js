@@ -15,6 +15,7 @@ var config = {
 //need to have the on-click event
 
 $("#").on("click", () => {
+    event.preventDefault();
     //get the new employee values from the input fields. Doing these as variables instead of an object because I am in a ton of pain and this is less thinking.
     let name = $("#name").val().trim();
     let role = $("#role").val().trim();
@@ -28,4 +29,16 @@ $("#").on("click", () => {
         rate: rate
     })
     //append new info to the employee table
+    dataRef.ref().on("child_added", function(childSnapshot) {
+
+        // Log everything that's coming out of snapshot
+        console.log(childSnapshot.val().name);
+        console.log(childSnapshot.val().name);
+        console.log(childSnapshot.val().email);
+        console.log(childSnapshot.val().age);
+        console.log(childSnapshot.val().comment);
+        console.log(childSnapshot.val().joinDate);
+
+        //and then no reallt append it to the html
+    }); 
 });
