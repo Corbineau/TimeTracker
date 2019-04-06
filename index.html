@@ -1,56 +1,55 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <meta charset="UTF-8">
-    <head>
-      <title>Employee Data Mangement</title>
-      <link rel="stylesheet" type="text/css" href="style.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-        crossorigin="anonymous">
-    </head>
-    
+<meta charset="UTF-8">
+
+<head>
+  <title>Employee Data Mangement</title>
+  <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
 <body>
-    <h1>Time Tracker</h1>
+  <h1>Time Tracker</h1>
 
-    <div class="container">
-      <div class="row">Current Employees  
-        <div class="col-lg-12">
-<form>
-  <div class="form-group">
-    <label for="name">Employee full name</label>
-    <input type="text" class="form-control" id="name" placeholder="Enter name">
-  </div>
-  <div class="form-group">
-    <label for="role">Role</label>
-    <input type="text" class="form-control" id="role" placeholder="role">
-  </div>
-  <div class="form-group">
-      <label for="date">Start Date</label>
-      <input type="date" class="form-control" id="date" placeholder="Start Date">
-    </div>
-    <div class="form-group">
-        <label for="rate">Monthly Rate</label>
-        <input type="number" class="form-control" id="rate" placeholder="Monthly Rate">
-      </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+  <div class="container">
+    <div class="row">Current Employees
+      <div class="col-lg-12">
+        <form>
+          <div class="form-group">
+            <label for="name">Employee full name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter name">
+          </div>
+          <div class="form-group">
+            <label for="role">Role</label>
+            <input type="text" class="form-control" id="role" placeholder="role">
+          </div>
+          <div class="form-group">
+            <label for="date">Start Date</label>
+            <input type="date" class="form-control" id="date" placeholder="Start Date">
+          </div>
+          <div class="form-group">
+            <label for="rate">Monthly Rate</label>
+            <input type="number" class="form-control" id="rate" placeholder="Monthly Rate">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
 
-
-        </div>
-      </div>
-      <div class="row">Add Employee</div>
-      <div class="col-lg-12" id="addEmployee">
 
       </div>
     </div>
+    <div class="row">Add Employee</div>
+    <div class="col-lg-12" id="addEmployee">
 
-    <script type="application/javascript" src=“https://www.gstatic.com/firebasejs/5.9.3/firebase.js“></script>
-
-    <script type="application/javascript" src="resources/js/app.js"></script>
+    </div>
+  </div>
+  <!-- firebase -->
+  <script type="text/javascript" src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script> 
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- our JS -->
+  <script type="text/javascript" src="resources/js/app.js"></script>
 
 </body>
-
-
-    
-
 
 </html>
