@@ -33,13 +33,19 @@ $("button").on("click", (event) => {
 
         // Log everything that's coming out of snapshot
         console.log(childSnapshot.val().name);
-        console.log(childSnapshot.val().name);
-        console.log(childSnapshot.val().email);
-        console.log(childSnapshot.val().age);
-        console.log(childSnapshot.val().comment);
-        console.log(childSnapshot.val().joinDate);
+        console.log(childSnapshot.val().role);
+        console.log(childSnapshot.val().startDate);
+        console.log(childSnapshot.val().rate);
+
+        //calculate the # of months worked, and the total paid til now
+        let monthsWorked = 0;
+        let payToDate = 0;
 
         //and then no really append it to the html
+        let newRow = $("<tr>");
+        newRow.append($(`<td>${name}</td><td>${role}</td><td>${startDate}</td><td>${monthsWorked}</td><td>${rate}</td><td>${payToDate}</td>`));
+        $("tbody").append(newRow);
+
 
         //handle errors
     }, function(errorObject) {
